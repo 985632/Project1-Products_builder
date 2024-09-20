@@ -1,13 +1,13 @@
 import { ProductNameTypes } from "../Type/Type";
 
 export interface IProduct {
-    id?: string;
+    id?: string | undefined;
     title: string;
     description: string;
     imageURL: string;
     price: string;
     colors: string[];
-    category: {
+    category?: {
         name: string;
         imageURL: string;
     };
